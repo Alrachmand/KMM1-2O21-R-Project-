@@ -1,4 +1,6 @@
-datakedua = 78 * 175
+# Nomor 3
 jml_siswa = 10 + 17
 
-datakedua + jml_siswa
+# Nomor 4
+datakedua = 78 * 175
+

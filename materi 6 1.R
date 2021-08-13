@@ -110,3 +110,4 @@ if (nilai > 65){
       bak = bak + 2
       print(bak)
     }
+

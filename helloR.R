@@ -6,3 +6,7 @@ Teks2
 
 list1 = list ("Sate Kambing", "Gado - Gado", "Pecel Lele")
 list1
+
+
+    
+    
