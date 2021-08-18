@@ -39,9 +39,25 @@ fl <- flights
    # >= lebih dari sama dengan
    # <  kurang dari
    # <= kurang dari sama dengan
+## Operator Logika
+   # & dan (pilih keduanya)
+   # | atau (pilih salah satu kondisi)
+   # ! bukan (yg tidak dipilih)
         
+        #Mencari jarak antar bandara lebih dari 1000 miles
         filter(fl2, distance > 1000)
+        #Mencari jadwal keberangkatan yang tidak delay
         filter(fl2, dep_delay <= 0)
+        #Mencari semua penerbangan kecuali dari bandara LGA
+        filter(fl2, origin != "LGA")
+        #Mencari penerbangan yang tidak telat samsek
+        filter(fl2, dep_delay <=0, arr_delay <=0)
+        #Mencari penerbangan yg terbang antara april - jun
+        filter(fl2, month > 3 & month < 7)
+        #Mencari penerbangan dengan jarak 1000 - 1400
+        filter(fl2, distance > 999 & distance < 1399)
+        #Mencari penerbangan ke Houston (IAH & HOU)
+        filter(fl2, dest == "IAH" | dest == "HOU")
   #  3.Mengurutkan nilai 
   #  4.Membuat kolom baru
   #  5.Menggunakan Operator pipe
