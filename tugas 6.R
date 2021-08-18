@@ -5,3 +5,5 @@ jml_siswa = 10 + 17
 datakedua = 78 * 175
 datakedua
 
+jml_siswa
+
