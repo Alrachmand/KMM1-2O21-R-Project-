@@ -54,7 +54,7 @@ fl <- flights
         #Mencari penerbangan yg terbang antara april - jun
         filter(fl2, month > 3 & month < 7)
         #Mencari penerbangan dengan jarak 1000 - 1400
-        filter(fl2, distance > 999 & distance < 1399)
+        filter(fl2, distance > 999 | distance < 1399)
         #Mencari penerbangan ke Houston (IAH & HOU)
         filter(fl2, dest == "IAH" | dest == "HOU")
         
@@ -85,7 +85,7 @@ fl <- flights
           
   #  5.Menggunakan Operator pipe
           # %>% atau |>
-          fl10 <- fl2  |>
+            fl2  |>
             select(dep_delay, arr_delay, air_time, distance) |>
             filter(dep_delay > 20 & arr_delay <= 0) |>
             mutate(speed = distance / (air_time / 60)) |>
